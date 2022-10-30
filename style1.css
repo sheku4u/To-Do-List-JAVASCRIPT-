@@ -6,30 +6,19 @@
     font-family: 'Freehand', cursive;
 }
 
-/* container ek div ha ijisme to-do list aati hai or  sb kuch bi */
-/* .container {
-    display: block;
-    width: 70em;
-    margin: auto;
-    height: 90vh;
-    margin-top: 3em;
-    border: 1px solid white;
-
-} */
-
 body {
     background-image: linear-gradient(120deg, #e2c35d, #d88771);
     color: #FFFFFF;
     height: 100vh;
+    width: 100%;
 
 }
 
 .container h1 {
-    /* margin-right: 100px;  */
+   
     margin-left: 9em;
     margin-top: 1.5em;
-    /* margin-bottom: 0.5em; */
-    width: 100%;
+    width: 63%;
     height: 25px;
     font-family: 'Poppins';
     font-style: normal;
@@ -40,7 +29,6 @@ body {
 }
 
 .form {
-    /* margin-left: 20em; */
     min-height: 20vh;
     display: flex;
     justify-content: center;
@@ -54,15 +42,12 @@ border: none;
 /* yahan se input ki jagah start hoti hai */
 #inputTask {
     box-sizing: border-box;
-    /* position: absolute; */
     width: 600px;
     height: 60px;
-    
-    background: #D6D7ED;
+    background: #ffffff;
     mix-blend-mode: normal;
-    border: 1px solid #000000;
+    border: 2px solid #fff;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-
     margin-top: 50px;
     font-style: normal;
     font-weight: 600;
@@ -71,9 +56,7 @@ border: none;
     text-align: left;
     letter-spacing: 0.05em;
     text-indent: 10px;
-    color: #5541CE;
-
-
+    color: #272220;
 }
 
 /* ye input ko add krne wala btn hai */
@@ -81,17 +64,15 @@ border: none;
 
     width: 97px;
     height: 60px;
-    background: #5541CE;
-
+    background: #d88771;
     font-style: normal;
-
     font-size: 26px;
     line-height: 100%;
-    /* text-align: center; */
     letter-spacing: 0.04em;
     text-indent: 4px;
     text-transform: capitalize;
     color: #FFFFFF;
+    border: 2px solid rgb(255, 248, 248);
 }
 
 /* ye tasklist hai jo ki print hoti hai javascript ki madad se */
@@ -99,37 +80,36 @@ border: none;
     width: fit-content;
     height: fit-content;
     background: none;
-    margin-left: 30em;
+    margin-left: 25em;
     border: none;
     border-radius: 5%;
+    /* overflow-y: auto; */
+    display: block;
+
+    
 
 }
 
-/* ye list items hai to do list ke */
 .para ul li {
-/* display:flex ;
-flex-direction: row;
-text-align: left; */
 
-margin-top: 20%;
-    width: 656px;
-    list-style: number;
-    height: fit-content;
-    background-image: none;
-    width: 656px;
-    border-radius: 10px;
-    /* height: 54px; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 1.5em;
-    /* color: #5541CE; */
-    color: #D6D7ED;
-    mix-blend-mode: normal;
-    border: none;
-    margin-top: 0.3em;
 
+    list-style: none;
+    height: 2em;
+    line-height: 2em;
+    font-size: 1.5em;
+    margin-top: 1em;
+    background: rgb(243, 247, 255);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    max-width: 42em;
+    cursor: pointer;
+    overflow: hidden;
+    word-wrap: break-word;
+    color: #d88771;
 }
+
+
 
 /* ye vo text ha ijo ki add hota hai list m or hume dikhta hai */
 .txt {
@@ -143,24 +123,16 @@ margin-top: 20%;
     font-weight: 600;
     font-size: 26px;
     line-height: 100%;
-
     text-align: right;
     letter-spacing: 0.04em;
     text-indent: 4px;
-
     color: #000;
-
-    /* mix-blend-mode: normal; */
-    /* border: 1px solid rgba(0, 0, 0, 0.35); */
-
-
-
     padding: 2px;
 }
 
 /* ye wala btns ki styling ke  liye hai jo ki hume dikhti hai li items mein */
 .btns {
-
+   
     margin: 2px;
     padding: 2px;
     background: none;
@@ -171,8 +143,5 @@ margin-top: 20%;
 /* ye woh hai jo humme text pr complete krne se dikhti hai */
 .completed {
     text-decoration: line-through;
-    opacity: 0.6em;
-}
-.btns1{
-    margin-left: 10%;
+    -webkit-text-stroke: #000;
 }
